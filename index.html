@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8" />
+    <!-- Title of the document -->
+    <title>Space Invaders</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to the Google Fonts for custom font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Container for control instructions -->
+    <div class="controls-info">
+      <!-- Instruction to start the game -->
+      <p>SPACE to start</p>
+      <!-- Instructions to move the spaceship -->
+      <p>← → to move</p>
+      <!-- Instruction to shoot -->
+      <p>↑ to shoot</p>
+    </div>
+    <!-- Container for the entire game -->
+    <div class="game-container">
+      <!-- Title of the game -->
+      <h1 class="title">SPACE INVADERS</h1>
+      <!-- Container for game information like score and level -->
+      <div class="game-info">
+        <!-- Container for the score -->
+        <div class="score-container">
+          <span>SCORE:</span>
+          <!-- Display the current score -->
+          <h2 class="results">0</h2>
+        </div>
+        <!-- Container for the level -->
+        <div class="level-container">
+          <span>LEVEL:</span>
+          <!-- Display the current level -->
+          <h2 class="level-display">1</h2>
+        </div>
+      </div>
+      <!-- Grid where the game will be rendered -->
+      <div class="grid"></div>
+      <!-- Start over button (hidden by default) -->
+      <button class="start-over" style="display: none">START OVER</button>
+      <!-- Add after the grid div -->
+      <div class="mobile-controls">
+        <button class="control-btn" id="leftBtn">←</button>
+        <button class="control-btn" id="shootBtn">↑</button>
+        <button class="control-btn" id="rightBtn">→</button>
+      </div>
+    </div>
+    <!-- Link to the external JavaScript file -->
+    <script src="app.js"></script>
+  </body>
+</html>
